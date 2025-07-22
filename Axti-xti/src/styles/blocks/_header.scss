@@ -1,0 +1,100 @@
+@use '../helpers/' as *;
+
+.header {
+    position: sticky;
+    z-index: 100;
+    top: fluid(80, 30);
+    padding-inline: fluid(30, 10);
+
+     &__overlay {
+        @include mobile-above {
+            display: contents;
+        }
+
+        @include mobile {
+            position: fixed;
+            inset: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            row-gap: 3rem;
+            padding: 1rem;
+            background-color: var(--color-gradient);
+            transition-duration: var(--transition-duration);
+
+
+            &:not(.is-active) {
+                @include hide;
+
+                translate: 100%;
+            }
+        }
+    }
+
+    &__menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        @include mobile {
+            overflow-y: auto;
+        }
+
+        &-list {
+            display: flex;
+            align-items: center;
+            background-color: var(--color-light);
+            
+            @include mobile {
+                flex-direction: column;
+                row-gap: 2rem;
+                background-color: var(--color-yellow);
+            }
+        }
+
+        &-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: fluid(45, 30);
+            padding-inline: fluid(14, 4);
+
+        }
+
+        &-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: rem(10) rem(20);
+            font-family: 'Montserrat', sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 800;
+            font-style: italic;
+            font-size: fluid(40, 16);
+            width: 100%;
+            height: 100%;
+            background-color: var(--color-dark);
+            color: var(--color-light);
+            text-align: center;
+            white-space: nowrap;
+
+            @include laptop {
+                padding: rem(8) rem(16);
+            }
+
+            @include tablet {
+                padding: rem(6) rem(12);
+            }
+
+            @include mobile {
+                background-color: var(--color-red);
+                color: var(--color-dark);
+            }
+            
+            &:hover {
+                background-color: var(--color-red);
+                color: var(--color-dark);
+            }
+        }
+    }
+}

@@ -7,14 +7,14 @@ html {
 }
 
 body {
-    @include fluid-text(18, 14);
+    @include fluid-text(40, 14);
 
     display: flex;
     flex-direction: column;
     font-family: var(--font-family-base);
     letter-spacing: -0.03em;
-    color: var(--color-gray-50);
-    background-color: var(--color-dark);
+    color: var(--color-dark);
+    background-image: var(--color-gradient);
     overflow-x: hidden; // Отключение горизонтального скролла
 }
 
@@ -85,7 +85,7 @@ a {
     color: inherit;
 
     @include hover {
-        color: var(--color-accent);
+        color: var(--color-light);
     }
 
     &[class] {

@@ -3,7 +3,7 @@
 :root {
   --color-light: #FFFFFF;
 
-  --color-dark: #141414;
+  --color-dark: #000000;
   --color-dark-10: #1A1A1A;
   --color-dark-15: #262626;
   --color-dark-20: #333333;
@@ -12,21 +12,18 @@
   --color-gray-50: #7E7E81;
   --color-gray-60: #98989A;
 
-  --color-accent: #FFD11A;
-  --color-red: #FF5500;
-
-  --gradient: linear-gradient(
-    45deg,
-    var(--color-dark-15) 64%,
-    var(--color-accent) 136%
-  );
+  --color-yellow: rgba(253, 255, 0, 1);
+  --color-red: rgba(204, 0, 0, 1); 
+  --color-black: rgba(3, 0, 24, 1);
+  --color-light: rgba(254, 255, 254, 1);
+  --color-gradient: linear-gradient(180deg, #fff 0%, #8db1c7 100%);
 
   --border: #{rem(1)} solid var(--color-dark-15);
 
   --shadow: 0 0 0 #{rem(3)} #191919;
 
-  --font-family-base: 'Inter', sans-serif;
-  --font-family-accent: 'Kumbh Sans', sans-serif;
+  --font-family-base: 'Onest', sans-serif;
+  --font-family-accent: 'Courier Primere', sans-serif;
 
   --container-width: #{rem(1600)};
   --container-padding-x: #{rem(16)};
