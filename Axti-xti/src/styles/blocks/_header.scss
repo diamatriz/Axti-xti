@@ -6,6 +6,7 @@
     top: fluid(80, 30);
     padding-inline: fluid(30, 10);
 
+
      &__overlay {
         @include mobile-above {
             display: contents;

@@ -16,6 +16,10 @@
         row-gap: fluid(200, 20);
         z-index: 25;
 
+        @include mobile {
+            padding-inline: 0;
+        }
+
         &-pica {
             width: 100%;
         }
