@@ -9,7 +9,8 @@ html {
 body {
     @include fluid-text(40, 14);
 
-    display: flex;
+    cursor: url('../images/icons/cursor.png') 32 32, auto;
+    display: flex;  
     flex-direction: column;
     font-family: var(--font-family-base);
     letter-spacing: -0.03em;

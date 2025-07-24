@@ -145,13 +145,13 @@ a:where([class]) {
   display: inline-flex;
 }
 
-/**
-  Курсор-рука при наведении на элемент
- */
+a,
 button,
 label {
-  cursor: pointer;
+  cursor: url('../images/icons/cursor.png') 32 32, auto;
 }
+
+
 
 /**
   Приводим к единому цвету svg-элементы

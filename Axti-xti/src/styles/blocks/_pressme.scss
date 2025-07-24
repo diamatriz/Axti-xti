@@ -1,0 +1,28 @@
+@use '../helpers/' as *;
+
+.pressme {
+    display: flex;
+    position: relative;
+    z-index: 99;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    height: 93vh;
+    padding-bottom: rem(100);
+
+    &__button {
+        background: transparent;
+        border: none;
+        padding: 0;
+
+        &-gif {
+            background: transparent;
+            border: none;
+            padding: 0;
+            width: rem(120);
+            height: 100%;
+            display: block;
+        }
+    }
+}
