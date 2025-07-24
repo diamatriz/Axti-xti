@@ -1,0 +1,20 @@
+@use '../helpers/' as *;
+
+.wrapper {
+    position: absolute;
+    bottom: fluid(120, 40);
+    left: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    .gifbox {
+        display: grid;
+        grid-template-columns: rem(88) rem(88) rem(88) rem(88);
+        position: relative;
+        z-index: 99;
+    }
+}
