@@ -9,7 +9,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
+    
+    @include mobile {
+        bottom: 0;
+    }
 
     .gifbox {
         display: grid;
